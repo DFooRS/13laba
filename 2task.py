@@ -17,4 +17,4 @@ def aver_garm(*args):
 
 
 if __name__ == "__main__":
-    print(aver_garm(5, 4, 2))
+    print(aver_garm(5, 4, 2, 7, 3))
