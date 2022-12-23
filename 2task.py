@@ -2,19 +2,18 @@
 # -*- coding: utf-8 -*-
 
 
-def aver_garm(*args):
+def aver_harm(*args):
     if args:
-        n = 0
-        sum = 0
+        n = len(args)
+        summa = 0
         for item in args:
-            sum += 1 / item
-            n += 1
+            summa += 1 / item
 
-        return n / sum
+        return n / summa
 
     else:
         return None
 
 
 if __name__ == "__main__":
-    print(aver_garm(5, 4, 2, 7, 3))
+    print(aver_harm(5, 4, 2, 7, 3))

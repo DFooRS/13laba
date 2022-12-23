@@ -7,10 +7,9 @@ import math
 def aver_geom(*args):
     if args:
         mult = 1
-        n = 0
+        n = len(args)
         for item in args:
             mult *= item
-            n += 1
         n = 1 / n
 
         return math.pow(mult, n)
@@ -20,4 +19,4 @@ def aver_geom(*args):
 
 
 if __name__ == "__main__":
-    print(aver_geom(5, 4, 2))
+    print(aver_geom(5, 4, 2, 8))

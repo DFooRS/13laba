@@ -2,19 +2,14 @@
 # -*- coding: utf-8 -*-
 
 
-def aver_even(*args):
-    if args:
-        sum_e = 0
-        n = 0
-        for arg in args:
-            if arg % 2 == 0:
-                sum_e += arg
-                n += 1
-        return sum_e / n
-
-    else:
-        return None
+def print_cars(owner, **cars):
+    print(f"Owner name: {owner}")
+    for car, name in cars.items():
+        print(f"{car }: {name}")
 
 
 if __name__ == "__main__":
-    print(aver_even(5, 4, 2, 7, 3, 12))
+    print_cars(
+        "Dmitriy",
+        cars=["ГАЗ-3102", "Jaguar XF", "Toyota Camry"]
+    )
